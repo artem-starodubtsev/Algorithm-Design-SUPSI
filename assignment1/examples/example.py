@@ -18,3 +18,27 @@ if __name__ == "__main__":
 
     print(IndependentSetCertifier().certify(instance, good_set))
     print(IndependentSetCertifier().certify(instance, bad_set))
+    print('-'*50)
+
+    S = Schedule.from_tuples([
+        (0, 6),
+        (1, 4),
+        (3, 5),
+        (3, 8),
+        (4, 7),
+        (5, 9),
+        (6, 10),
+        (8, 11),
+    ])
+
+    instance = IntervalSchedulingInstance(S)
+
+    good_set = IntervalSchedulingSolution(interval_idxes=[1, 4, 7])
+    bad_set = IntervalSchedulingSolution(interval_idxes=[0, 5])
+
+    print(IntervalSchedulingCertifier().certify(instance, good_set))
+    print(IntervalSchedulingCertifier().certify(instance, bad_set))
+    print("-" * 50)
+
+
+
