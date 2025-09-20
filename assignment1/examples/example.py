@@ -1,5 +1,4 @@
 from assignment1.certifier import *
-from assignment1.certifier import BipartiteMatchingInstance
 
 if __name__ == "__main__":
     # IndependentSet check
