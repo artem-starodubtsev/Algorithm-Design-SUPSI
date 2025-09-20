@@ -7,6 +7,9 @@ from .IndependentSetCertifier import (
 from .IntervalSchedulingCertifier import (
     IntervalSchedulingInstance, IntervalSchedulingSolution, IntervalSchedulingCertifier
 )
+from .BipartiteMatchingCertifier import (
+    BipartiteMatchingInstance, BipartiteMatchingSolution, BipartiteMatchingCertifier
+)
 
 __all__ = [
     "Graph",
@@ -19,4 +22,7 @@ __all__ = [
     "IntervalSchedulingInstance",
     "IntervalSchedulingSolution",
     "IntervalSchedulingCertifier",
+    "BipartiteMatchingInstance",
+    "BipartiteMatchingSolution",
+    "BipartiteMatchingCertifier",
 ]
